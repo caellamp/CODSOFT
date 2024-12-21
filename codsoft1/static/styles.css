@@ -1,0 +1,358 @@
+body {
+  background-color: #EAE6F3;
+  background-image: url('../assets/images/hero-background.png');
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.svg-container {
+  padding: 10px;
+}
+
+.animated-background {
+  background: linear-gradient(120deg, #F4E1FF, #E8D6FE, #D7C5FF, #CBB9FF, #BFA9FF, #D4B3FF, #E5C8FF);
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10%;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  color: rgb(76, 71, 71);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+}
+
+.my_text {
+
+  color: #9b59b6;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.me_image {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.container2 {
+  margin: 10%;
+  margin-top: 0%;
+  padding-top: 8%;
+}
+
+h2 {
+  color: #6C4A8A;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.about-me {
+  font-family: 'Lora', serif;
+  color: rgb(76, 71, 71);
+  text-align: justify;
+  font-size: 1.3rem;
+}
+
+.container2> :first-child {
+  margin: 3%;
+  margin-left: 0%;
+}
+
+.container3 {
+  padding: 10%;
+  background-color: #d1c4e9;
+
+}
+
+.container3 h2 {
+  margin-bottom: 5%;
+}
+
+.align-progress {
+
+  margin: 3%;
+  font-size: 20px;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-weight: 500px;
+  color: #6d41a3;
+}
+
+.progress {
+  height: 20px;
+
+}
+
+.progress-bar {
+  align-items: end;
+  animation: gradient-animation 15s infinite alternate;
+  background: linear-gradient(90deg, #DA70D6, #9370DB, #9932CC);
+  background-size: 300% 300%;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bd-example {
+  margin: 10%;
+}
+
+.project-pics {
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.card {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: lavender;
+  height: 320px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  transition: opacity 0.3s ease;
+}
+
+.card:hover img {
+  opacity: 0.8;
+}
+
+.card:hover .card-body {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+.card:hover .card-title {
+  color: #f8d7e1;
+}
+
+.card h5 {
+  font-size: 1.5rem;
+  color: #9b59b6;
+}
+
+.card p {
+  font-size: 1.1rem;
+  font-family: 'Lora', serif;
+  color: rgb(76, 71, 71);
+
+}
+
+.container4 h2 {
+  margin-bottom: 8%;
+}
+
+.container5 {
+  padding: 10%;
+  padding-top: 0%;
+  text-align: center;
+  border-bottom: 1px solid lavender;
+}
+
+.container5 h2 {
+  margin-bottom: 5%;
+}
+
+.container5 p {
+  font-size: 1.3rem;
+  font-family: 'Lora',
+    serif;
+  color: rgb(76, 71, 71);
+}
+
+.container6 {
+  padding: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+
+  background-color: #d1c4e9;
+}
+
+.container6 p {
+  font-size: 2rem;
+  font-family: 'Montserrat',
+    sans-serif;
+  font-weight: 500px;
+  color: #6d41a3;
+}
+
+.btn-light {
+  background-color: lavender;
+}
+
+.svg button {
+  margin-left: 4%;
+  font-family: 'Montserrat',
+    sans-serif;
+}
+
+.svg1 {
+  margin: 4%;
+  margin-bottom: 0%;
+}
+
+.svg2 {
+  margin: 4%;
+  margin-top: 1%;
+}
+
+.container7 {
+  padding: 5%;
+}
+
+@media (max-width: 768px) {
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .text span {
+    font-size: 2.4rem;
+  }
+
+  .me_image {
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+  }
+
+  .container2 {
+    margin: 10%;
+    padding-top: 0%;
+  }
+
+  .container2 h2 {
+    font-size: 2rem;
+  }
+
+  .container2 p {
+    font-size: 0.9rem;
+  }
+
+  .container3 h2 {
+    font-size: 2rem;
+
+  }
+
+  .progress {
+    height: 10px;
+  }
+
+  .align-progress {
+    font-size: 0.9rem;
+  }
+
+  .container4 h2 {
+    font-size: 2rem;
+  }
+
+  .container5 h2 {
+    font-size: 2rem;
+  }
+
+  .card h5 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+
+  .container5 {
+    padding-top: 10%;
+  }
+
+  .container6 {
+    padding: 10%;
+  }
+
+  .container6 h2 {
+    font-size: 2rem;
+  }
+
+  .container6 p {
+    font-size: 1.3rem;
+  }
+
+  .svg button {
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+
+  .svg1 svg {
+    height: 18px;
+  }
+
+  .svg2 svg {
+    height: 18px;
+  }
+}
