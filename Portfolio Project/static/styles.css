@@ -259,6 +259,13 @@ h2 {
 }
 
 @media (max-width: 768px) {
+   .bi-person-circle{
+    fill: white;
+  }
+
+  .fs-4{
+    color: white !important;
+  }
 
   .container1 {
     display: flex;
